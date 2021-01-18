@@ -61,7 +61,7 @@ class _ToDoScreenState extends State<ToDoScreen> {
                   itemBuilder: (context, index) {
                     return TaskListTile(
                       item: taskList[index],
-                      changeCheckbox: (bool val) {
+                      onTaskStatusChange: (bool val) {
                         setState(() {
                           taskList[index].isDone = val;
                         });
